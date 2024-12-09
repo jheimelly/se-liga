@@ -1,5 +1,5 @@
 document.getElementById('formulario').addEventListener('submit', function(event){
-    event.preventDefault()
+    event.preventDefault();
 
     //obter as notas inseridas pelo usuário
     let nota1 = parseFloat(document.getElementById('nota1').value);
@@ -11,7 +11,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
 
     //exibir a mensagem de resultado
     let resultadoDiv = document.getElementById('resultado');
-    if(media >= 6){
+    if(media >= 6.0){
         resultadoDiv.innerHTML = `<p class="aprovado">Aprovado! Sua média foi: ${media.toFixed(2)}</p>`;
     }else{
         resultadoDiv.innerHTML = `<p class="recuperacao">Recuperação. Sua média foi: ${media.toFixed(2)}</p>`;
