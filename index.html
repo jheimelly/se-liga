@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-">
+<html lang="pt-br">
 <head>
-<met charet="UTF-8">
-<meta name="viewport" content="width=device-width,initial-initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Cálculo de média de notas</title>
-<link rel="stylesheer"href="styles.css">
+<link rel="stylesheet"href="styles.css">
 </head>
 <body>
 <div class="container">
-    <h1>calculadora de média de notas</h1h1>
+    <h1>calculadora de média de notas</h1>
 
         <form id="formulario">
-            <Iabel for="">
+            <Iabel for="nota1" class="label">Nota do 1o Trimestre</Iabel>
+            <input type="number" id="nota1" class="input" required>
+
+            <label for="nota2" class="label">Nota do 2o Trimestre</label>
+            <input type="number" id="nota2" class="input" required>
+
+            <label for="nota3" class="label">Nota do 3o Trimestre</label>
+            <input type="number" id="nota3" class="input" required>
+
+            <button type="submit" id="calcular" class="botao">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <!--Resultado será exibido aqui-->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
