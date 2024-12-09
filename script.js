@@ -16,4 +16,4 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     }else{
         resultadoDiv.innerHTML = `<p class="recuperacao">Recuperação. Sua média foi: ${media.toFixed(2)}</p>`;
     }
-    };
+    });
